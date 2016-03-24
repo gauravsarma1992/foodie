@@ -1,3 +1,13 @@
-// Place all the styles related to the welcome controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+body{
+  font-family: 'lato';
+}
+.navbar{
+  padding: 10px;background: #fff;
+}
+.right-sidebar{
+  background: #eee;min-height: 400px;
+}
+
+@font-face{
+  src: url("/fonts/Lato-Light.ttf");font-family: 'lato';
+}
