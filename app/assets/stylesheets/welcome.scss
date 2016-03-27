@@ -8,6 +8,25 @@ body{
   background: #eee;min-height: 400px;
 }
 
+.search-box{
+  height: 80px;border-radius: 4px 4px;
+}
+.search-btn{
+  height: 80px;border-radius: 4px 4px;width: 100%;
+}
+.short-container{
+  border: 1px solid #eee;margin-top: 40px;min-height: 300px;
+  .art{
+    padding: 10px;border-bottom: 1px solid #eee;min-height: 100px;
+    .img{
+      border: 1px solid #eee;min-height: 40px;
+    }
+  }
+}
+.trending{
+  margin-top: 30px;
+}
+
 @font-face{
   src: url("/fonts/Lato-Light.ttf");font-family: 'lato';
 }

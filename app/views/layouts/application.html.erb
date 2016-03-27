@@ -2,10 +2,9 @@
 <html>
 <head>
   <title>Foodie</title>
-  <link type="text/css" rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-  <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
   <%= csrf_meta_tags %>
 </head>
 <body>
@@ -19,6 +18,7 @@
       <%= render 'partials/right_sidebar' %>
     </div>
   </div>
+  <%= render 'partials/footer' %>
 
 </body>
 </html>
