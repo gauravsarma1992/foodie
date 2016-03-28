@@ -17,9 +17,12 @@ body{
 .short-container{
   border: 1px solid #eee;margin-top: 40px;min-height: 300px;
   .art{
-    padding: 10px;border-bottom: 1px solid #eee;min-height: 100px;
+    padding: 10px;*border-bottom: 1px solid #eee;min-height: 100px;
     .img{
-      border: 1px solid #eee;min-height: 40px;
+      *border: 1px solid #eee;min-height: 40px;
+    }
+    .cont{
+      padding-top: 20px;
     }
   }
 }

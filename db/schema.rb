@@ -11,14 +11,16 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160327063608) do
+ActiveRecord::Schema.define(version: 20160327175851) do
 
   create_table "blogs", force: :cascade do |t|
     t.string   "link",       limit: 255
     t.string   "location",   limit: 255
     t.string   "blog_type",  limit: 255
-    t.datetime "created_at",             null: false
-    t.datetime "updated_at",             null: false
+    t.datetime "created_at",               null: false
+    t.datetime "updated_at",               null: false
+    t.text     "brief",      limit: 65535
+    t.string   "image_link", limit: 255
   end
 
 end

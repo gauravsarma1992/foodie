@@ -1,0 +1,57 @@
+<div class="container">
+  <% if @default %>
+    <div class="row col-md-12 text-center">
+      <div class="col-md-8">
+        <input class="form-control search-box">
+      </div>
+      <div class="col-md-1">
+        <button class="btn btn-primary search-btn"><i class="fa fa-search"></i></button>
+      </div>
+    </div>
+  <% end %>
+  <div class="col-md-12 row">
+    <div class="col-md-8 short-container">
+      <% if @blogs.length.eql? 0 %>
+        <h3 align="center">No Blog posts</h3>
+      <% end %>
+      <% @blogs.each do |blog| %>
+      <a href="/welcome/blogs/<%= blog.link %>">
+        <div class="art row">
+          <div class="col-md-3 img text-center">
+            <img src="/assets/<%= blog.image_link %>" height="100px" width="100px">
+          </div>
+          <div class="col-md-9 cont">
+            <%= blog.brief[0..200] %>... Read More
+          </div>
+        </div>
+      </a>
+      <% end %>
+    </div>
+  </div>
+  <% if @default %>
+    <div class="col-md-12 row">
+      <div class="col-md-12 trending">
+        <div class="col-md-3 text-center">
+          <img height="100px" width="90%">
+          <br>
+          Trending articles
+        </div>
+        <div class="col-md-3 text-center">
+          <img height="100px" width="90%">
+          <br>
+          Trending articles
+        </div>
+        <div class="col-md-3 text-center">
+          <img height="100px" width="90%">
+          <br>
+          Trending articles
+        </div>
+        <div class="col-md-3 text-center">
+          <img height="100px" width="90%">
+          <br>
+          Trending articles
+        </div>
+      </div>
+    </div>
+  <% end %>
+</div>
